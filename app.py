@@ -40,7 +40,8 @@ if saved_cookie and not st.session_state.authenticated:
 if not st.session_state.authenticated:
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.title("🔐 Portal DTE")
+        st.title("🔐 Portal para descargar documentos de correo electronico")
+        st.title("🔐 Json, se convierten a XLS automaticamente")
         st.markdown("Ingrese su licencia activa para acceder al sistema.")
         
         lic_input = st.text_input("Clave de Licencia", type="password")
@@ -222,4 +223,5 @@ else:
                                         )
                                         
                         except Exception as e:
+
                             st.error(f"Error de proceso: {str(e)}")
