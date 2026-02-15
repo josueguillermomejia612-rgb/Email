@@ -40,7 +40,7 @@ if saved_cookie and not st.session_state.authenticated:
 if not st.session_state.authenticated:
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.title("🔐 Mejia -- ")
+        st.title("🔐 Analizador -- ")
         st.markdown("🔐Portal para descargar documentos de correo electronico--  Json, se convierten a XLS automaticamente")
         st.markdown("Ingrese su licencia activa para acceder al sistema.")
         
@@ -225,4 +225,5 @@ else:
                         except Exception as e:
 
                             st.error(f"Error de proceso: {str(e)}")
+
 
