@@ -1,6 +1,0 @@
-streamlit
-pandas
-openpyxl
-cryptography
-supabase
-streamlit-cookies-controller
